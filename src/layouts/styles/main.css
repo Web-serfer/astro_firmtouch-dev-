@@ -1,10 +1,5 @@
 @import './fonts.css';
 
-
-html {
-	font-family: 'Roboto', sans-serif;
-}
-
 * {
 	padding: 0px;
 	margin: 0px;
@@ -15,6 +10,10 @@ html {
 *::before,
 *::after {
 	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Roboto', sans-serif;
 }
 
 /* Links */
