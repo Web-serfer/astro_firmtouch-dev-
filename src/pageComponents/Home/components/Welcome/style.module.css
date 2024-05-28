@@ -1,0 +1,23 @@
+.section {
+	background-color: var(--dark);
+	overflow: hidden;
+}
+
+.heartsWrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.imgWrap {
+	display: flex;
+	justify-content: center;
+}
+.batPhoto {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.slider,
+.test {
+	background-color: var(--light);
+}

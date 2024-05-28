@@ -1,0 +1,25 @@
+.headerLogo {
+	background: var(--dark);
+	height: 20px;
+	width: 20px;
+}
+
+.headerWrap {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: auto 1fr;
+	align-items: center;
+}
+
+.navMenu {
+	display: grid;
+	grid-auto-flow: column;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.navLink {
+	padding: 20px 0;
+	position: relative;
+}

@@ -1,0 +1,24 @@
+---
+import AstroHeart from "../../../../components/AstroHeart/AstroHeart.astro";
+import styles from "./style.module.css";
+import { getLangSettings, getTranslate } from "translationSettings";
+
+const { t } = getLangSettings(Astro.url);
+---
+
+<section class={styles.section}>
+	<div class="container">
+		<div class={styles.heartsWrap}>
+			<AstroHeart />
+			<AstroHeart />
+		</div>
+		<div class={styles.test}>
+			{getTranslate(t.test_key_1, "test fallback")}
+		</div>
+		<div class={styles.slider}></div>
+		<div class={styles.heartsWrap}>
+			<AstroHeart />
+			<AstroHeart />
+		</div>
+	</div>
+</section>

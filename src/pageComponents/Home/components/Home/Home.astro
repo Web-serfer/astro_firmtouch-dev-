@@ -1,0 +1,19 @@
+---
+import Layout from '@layouts/Layout.astro';
+import styles from './home.module.css';
+---
+
+<Layout title="Firmtouch app" description="Description firmtouch app">
+  <section class={styles.section}>
+    <!-- container -->
+    <div class={styles.container}>
+      <!-- left_side -->
+      <div class={styles.left_side}>left side</div>
+      <!-- right_side -->
+      <div class={styles.right_side}>
+        right side
+        <footer>footer component</footer>
+      </div>
+    </div>
+  </section>
+</Layout>

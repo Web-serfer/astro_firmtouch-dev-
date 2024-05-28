@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 100vh;
+  max-width: 1920px;
+}
+
+.left_side {
+  width: 50%;
+  background-color: blue; 
+}
+
+
+.right_side {
+  width: 50%;
+  background-color: red; 
+}
+
+
+/* ==== Media queries ==== */
+
+@media (width < 768px) {
+  .container {
+    flex-direction: column; 
+  }
+
+  .left_side,
+  .right_side {
+    width: 100%; 
+  }
+}

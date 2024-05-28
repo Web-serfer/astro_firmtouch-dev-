@@ -1,0 +1,21 @@
+:root {
+	--dark: #000000;
+	--light: #ffffff;
+	--light-2: #bababa;
+	--grey-1: #7c7c7c;
+	--grey-2: #f8f8f8;
+	--grey-3: #e8e8e8;
+	--grey-4: #777777;
+	--grey-5: #999999;
+	--grey-6: #ededed;
+	--gray-7: #f3f3f3;
+	--gray-8: #f2f3f7;
+	--main-col: #212121;
+	--main-alert: #08d74f;
+	--main-alert-hover: #08bd46;
+	--alert-2: #0cd95b;
+	--alert-3: #0ad654;
+	--semitransparent: rgba(255, 255, 255, 0.5);
+	--attention-col: #ff3434;
+	--font-main: "Roboto", sans-serif;
+}

@@ -1,0 +1,35 @@
+---
+import './styles/fonts.css';
+import './styles/main.css';
+import './styles/vars.css';
+
+// import Header from '@components/Header/Header.astro';
+// import '@cps/static-pages-generator/reset.css';
+// import { getLangSettings } from 'translationSettings';
+// const { currentLang } = getLangSettings(Astro.url);
+// const dir = currentLang === 'ar' || currentLang === 'fa' ? 'rtl' : 'ltr';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props as Props;
+---
+
+<!doctype html>
+<!-- <html lang={currentLang} dir={dir}> -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content={description} />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
