@@ -4,6 +4,7 @@
   max-width: 1920px;
 }
 
+/* ==== left side ==== */
 .left_side {
   width: 50%;
   position: relative;  
@@ -29,10 +30,32 @@
   font-weight: 500;  
 }
 
-
+/* ==== right side ==== */
 .right_side {
   width: 50%;
   background-color: red;  
+}
+
+.right_services__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+}
+
+.right_services__items div {
+  border: 1px solid #ccc; 
+  padding: 10px; 
+}
+
+.right_side__footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+}
+
+.right_side__footer div{
+  border: 1px solid #ccc; 
+  padding: 10px; 
 }
 
 

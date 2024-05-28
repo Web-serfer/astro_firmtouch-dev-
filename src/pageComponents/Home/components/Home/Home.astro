@@ -1,25 +1,57 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import styles from './home.module.css';
+import services from './Services.js';
 ---
 
 <Layout title="Firmtouch app" description="Description firmtouch app">
-  <section class={styles.section}>
-    <!-- container -->
-    <div class={styles.container}>
-      <!-- left_side -->
-      <div class={styles.left_side}>
-        <!-- logo -->
-        <span class={styles.left_side__logo}>Firmtouch</span>
-        <span class={styles.left_side__textBottom}
-          >2024, Firmtouch Trading Limited</span
-        >
+  <section class={styles.container}>
+    <!-- left_side -->
+    <div class={styles.left_side}>
+      <!-- logo -->
+      <span class={styles.left_side__logo}>Firmtouch</span>
+      <span class={styles.left_side__textBottom}
+        >2024, Firmtouch Trading Limited</span
+      >
+    </div>
+    <!-- right_side -->
+    <div class={styles.right_side}>
+      <!-- title -->
+      <h1 class={styles.right_title}>
+        Marketing and advertising services for companies operating in the
+        financial markets industry. We offer client support services, develop
+        educational materials and conduct educational events in the financial
+        markets sector.
+      </h1>
+      <!-- services items -->
+      <div class={styles.right_services}>
+        <h2 class={styles.right_services__title}>Our services:</h2>
+        <div class={styles.right_services__items}>
+          {
+            services.map((service) => (
+              <div key={service.id}>
+                <span>{service.id}</span>
+                <p>{service.name}</p>
+              </div>
+            ))
+          }
+        </div>
       </div>
-      <!-- right_side -->
-      <div class={styles.right_side}>
-        right side
-        <footer class={styles.right_side__footer}>footer component</footer>
-      </div>
+      <!-- footer -->
+      <footer class={styles.right_side__footer}>
+        <!-- left side footer -->
+        <div>
+          <span> info@firmtouch.org </span>
+          <p>
+            Address: KPMG Center, 1-st floor, 1 Agias Fylaxeos Street, 3025
+            Limassol, CyprusRegistration number: HE 342582
+          </p>
+        </div>
+        <!-- right side footer -->
+        <div>
+          <span>Terms of use Privacy Policy Privacy Notice</span>
+        </div>
+      </footer>
     </div>
   </section>
 </Layout>
