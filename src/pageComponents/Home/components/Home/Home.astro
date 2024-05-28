@@ -8,11 +8,17 @@ import styles from './home.module.css';
     <!-- container -->
     <div class={styles.container}>
       <!-- left_side -->
-      <div class={styles.left_side}>left side</div>
+      <div class={styles.left_side}>
+        <!-- logo -->
+        <span class={styles.left_side__logo}>Firmtouch</span>
+        <span class={styles.left_side__textBottom}
+          >2024, Firmtouch Trading Limited</span
+        >
+      </div>
       <!-- right_side -->
       <div class={styles.right_side}>
         right side
-        <footer>footer component</footer>
+        <footer class={styles.right_side__footer}>footer component</footer>
       </div>
     </div>
   </section>
